@@ -1,0 +1,51 @@
+<html><head><style>
+<link rel="stylesheet" href="cssnav.css">
+</style>
+</head>
+<body bgcolor=#c0c0c0>
+<div class="navbar">
+<div class="dropdown">
+<a href="#">Home</a>
+<div class="dropdown">
+<button class="dropbtn">Frames</button>
+<div class="dropdown-content">
+<a href="Horizontal.html">Horizontal</a>
+<a href="Vertical.html">Vertical</a>
+<a href="Mixed.html">Mixed</a>
+<a href="Customized.html">Customized</a>
+</div></div>
+<div class="dropdown">
+<button class="dropbtn">Table</button>
+<div class="dropdown-content">
+<a href="T1.html">T1</a>
+<a href="T2.html">T2</a>
+<a href="T3.html">T3</a>
+</div></div>
+<div class="dropdown">
+<button class="dropbtn">List</button>
+<div class="dropdown-content">
+<a href="Ordered.html">Ordered List</a>
+<a href="Unordered.html">Unordered List</a>
+<a href="Description.html">Description List</a>
+</div></div>
+<div class="dropdown">
+<button class="dropbtn">CSS</button>
+<div class="dropdown-content">
+<a href="Css1.html">Css1</a>
+<a href="Css2.html">Css2</a>
+<a href="Css3.html">Css3</a>
+</div></div>
+<div class="dropdown">
+<button class="dropbtn">JavaScript</button>
+<div class="dropdown-content">
+<a href="JS1.html">JS1</a>
+<a href="JS2.html">JS2</a>
+<a href="JS3.html">JS3</a>
+</div>
+</div>
+<div class="login">
+<a href="Login.html">Login</a>
+</div></div>
+
+</body>
+</html>
