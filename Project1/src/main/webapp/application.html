@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="CSS/app.css">
+ 
+  <scrip src="script1.js"> </scrip>
+</head>
+<body>
+  <div class="container">
+
+    <img src="Logo1.jpg" class="top-left-image" alt="Image 1">
+    <img src="Logo2.jpg" class="top-right-image" alt="Image 2">
+
+    <div class="img3">
+      <img src="p2.png">
+<label class="label1" for="file">Choose Image</label>
+<input type="file" id="file" name="myfile" onchange="loadImage(event)">
+
+<img id="output"/>
+</div>
+
+<div class="h1">
+      <h2 align="center" color="red"> MOTHER THERESA INSTITUTE OF COMPUTER APPLICATIONS   </h2>
+</div>
+      <h3 align="center"> (Affiliated by AICTE, Affiliated to S. V. University, Tirupati)
+         <br>
+         Melumoi(Post), <b> PALAMANER - 517408</b>, Chittoor Dist., A.P.
+         <br>
+         <a href="www.mtimca.edu.in">www.mtimca.edu.in </a>,Email :
+         <a href="mailto:mtimca@gmail.com">mtimca@gmail.com</a>
+         <br>
+         PHONE : <a href="tel:08579-268575">08579-268575</a>
+      </h3>
+     <div class="h2">
+      <h2 align="center">
+         APPLICATION FORM
+      </h2>
+     </div>
+<form action ="adduser.jsp" method ="post" 
+>
+<table  class="table2">
+<tr>
+<td>
+<h4>Collge Roll No:<br>(Office Use only):</h4>
+</td>
+
+<div>
+    <td>
+    <input   style="font-size: 16px;
+     background:lightblue;
+      width: 30%;
+      padding: 10px;
+      display:block;
+      background-color:lightblue;
+      width: 20%;
+      padding: 12px 20px;
+      border:2px solid black;" type="text" name ="rollnumber">
+     
+      <div class="top-left-text"><h3><font color = "red">&nbsp<b><u>ICET CODE : MTCA</b></u></font></h3></div>
+      </td>
+   
+      </div>
+   
+</div>
+  </td>
+
+  </div>
+
+</tr>
+
+<tr>
+
+<td>
+<h4>1.NAME OF THE CANDIDATE :<br>(Capitals as per SSC.) </h4>
+</td>
+
+<div class="t">
+<td>
+    <div class="buttonIn">
+ <!--Validation Error-->
+ 
+<input type="text" name="stuname" maxlength="25" /><br>
+
+</div>
+</td>
+</div>
+
+</tr>
+
+<tr>
+
+<td>
+<h4>2.Gender </h4>
+</td>
+
+<td>
+:<input type="Radio" id="male" name="gender" value="Male"> Male
+<input type="Radio" id="Female" name="gender" value="Female"> Female
+</td>
+
+
+</tr>
+
+
+
+<tr>
+
+<td>
+ 
+<h4>3.Aadhar Number: </h4>
+
+</td>
+
+<td>
+  <div class="adharnum-1">
+<input type="number" name="stuaadharno" maxlength="12">
+
+</div>
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+ 
+<h4>4. Name of the mother :</h4>
+</td>
+
+<td>
+<input type="text" name="mname" maxlength="12">
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+  <div class="adharnum-2">
+<h4>5.Aadhar Number: </h4>
+</div>
+</td>
+
+<td>
+<input style=" font-size: 16px;
+border-right:none;
+border-left:none;
+border-top:none;
+border-bottom:2px solid black;
+ background:lightblue;
+  width: 90%;
+  padding: 10px;
+  display:block;" type="number" name="maadharno" maxlength="12">
+<td>
+</tr>
+
+<td>
+<h4>6. Name of the Father: </h4>
+</td>
+
+<td>
+<input type="text" name="fname" maxlength="12">
+</td>
+</tr>
+
+<tr>
+
+<td>
+  <div class="adharnum-3">
+<h4>7.Aadhar Number: </h4>
+</div>
+</td>
+
+<td>
+<input style=" font-size: 16px;
+border-right:none;
+border-left:none;
+border-top:none;
+border-bottom:2px solid black;
+ background:lightblue;
+  width: 90%;
+  padding: 10px;
+  display:block;" type="number" name="faadharno" maxlength="12" >
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+<h4>8.Occupation <br>of the parent</h4>
+</td>
+
+<td>
+&nbsp<input type="text" name="occupation" maxlength="20" >
+</td>
+
+<td>
+<h4>Income</h4>
+</td>
+
+<td>
+&nbsp<input style = "font-size: 16px;
+border-right:none;
+border-left:none;
+border-top:none;
+border-bottom:2px solid black;
+ background:lightblue;
+  width: 90%;
+  padding: 10px;
+  display:block;" type="number" name="income" maxlength="20" >
+</td>
+
+</tr>
+
+
+
+<div>
+<tr>
+
+<td>
+<h4>9. Date of Birth  DD/MM/YYYY </h4>
+</td>
+
+<td>
+<input type="date" name = "dob">
+</td>
+
+</tr>
+</div>
+
+<tr>
+<td>
+<h4>10. Blood group </h4>
+</td>
+<td>
+<!--DropDown  A+, A-, B+, B-, O+, O-, AB+, AB- Options-->
+<select name = "bloodgroup">
+<option value = "A+">A+</option>
+<option value = "A-">A-</option>
+<option value = "B+">B+</option>
+<option value = "B-">B-</option>
+<option value = "O+">O+</option>
+<option value = "O-">O-</option>
+<option value = "AB+">AB+</option>
+<option value = "AB-">AB-</option>
+</select>
+</div>
+</td>
+</tr>
+
+<tr>
+<td>
+<h4>11. Nationality & Religion: </h4>
+</td>
+<td>
+<input type="text" name="nationality" maxlength="20" required>
+</td>
+</tr>
+
+<tr>
+<td>
+<h4>12. Categeory of Reservation </h4>
+</td>
+<td>
+<select name = "cor">
+    <option value = "OC">OC</option>
+    <option value = "SC">SC</option>
+    <option value = "ST">ST</option>
+    <option value = "BC-A">BC-A</option>
+    <option value = "BC-B">BC-B</option>
+    <option value = "BC-C">BC-C</option>
+    <option value = "BC-D">BC-D</option>
+    </select>
+</td>
+
+<td>
+<h4>&nbspCaste:</h4>
+</td>
+
+<td>
+<input type="text" name="caste" maxlength="10" required>
+</td>
+</tr>
+</tr>
+
+
+<tr>
+<td>
+<h4>13.Address for communication </h4>
+</td>
+<td>
+ 
+<textarea rows="3" cols="30" maxlength="50" name="address"  required></textarea>
+<hr color="black" >
+
+</td>
+</tr>
+
+
+
+
+<tr>
+<td>
+ 
+<h4>14.Telephone no.</h4>
+</td>
+
+<td>
+  <div class="num">
+STD:
+<input   type="number" name ="std">
+
+  </div>
+</td>
+
+
+<td>
+  <div class="num">
+Phone:<input  type="number" name ="phone" maxlength="10">
+</div>
+</td>
+
+</tr>
+<tr>
+<td>
+  <div class="num">
+<h4>15.Mobile no.</h4>
+</div>
+</td>
+<td>
+  <div class="num">
+Mobile 1:
+<input   type="number" name ="mobileno" maxlength="10">
+</div>
+ 
+</td>
+
+
+<td ><div class="num">
+Mobile 2:<input  type="number" name ="phone" maxlength="10">
+</div>
+</td>
+</tr>
+</div>
+<tr>
+<td>
+<h4>16.Email Id</h4>
+</td>
+<td>
+&nbsp<input type="email" name="email" maxlength="20" required>
+</td>
+</tr>
+
+</table>
+
+<h4 align="left">Educational Qualifications:</h4>
+ <table border=1 class="table1" align = "center">
+ <tr>
+ <td rowspan = 2><b>Course</b></td><td rowspan = 2><b>Board/University</b></td>
+<td rowspan = 2><b>Group</b></td> <td rowspan = 2><b>medium</b></td>
+<td colspan = 3><b>marks</b></Td><td rowspan = 2><b>Class/Grade</b></td>
+<td rowspan = 2><b>month & Year of passing</b></td>
+ </tr>
+ <tr>
+ <td><b>Total</b></td><td><b>Secured</b></td><td><b>Percentage</b></td>
+ </tr>
+ <tr>
+ <th>SSC</th>
+<td ><textarea rows="3" cols="25" name="10-boared" maxlength="40" required></textarea></td>
+<td ><input  type="text" name ="10-group"> </td>
+<td ><input  type="text" name ="10-medium" maxlength="8" required></td>
+<td ><input  type="text" name ="10-total" maxlength="4" required></td>
+<td ><input  type="text" name ="10-secured"  maxlength="4" required></td>
+<td ><input  type="number" name ="percentage"  maxlength="6" required></td>
+<td ><input  type="text" name ="10-grad"  maxlength="4" required></td>
+<td ><input  type="year" name ="10-yop"  maxlength="4" required></td>
+ </tr>
+  <tr>
+ <td><b>Intermediate</b></td>
+<td ><textarea rows="3" cols="25"></textarea></td>
+<td ><input  type="text" name ="12-group"  maxlength="8" required></td>
+<td ><input  type="text" name ="12-medium"  maxlength="4" required></td>
+<td ><input  type="text" name ="12-total"  maxlength="4" required></td>
+<td ><input  type="text" name ="12-secured"  maxlength="4" required></td>
+<td ><input  type="number" name ="12-percentage"  maxlength="6" required></td>
+<td><input  type="text" name ="12-grad"  maxlength="4" required></td>
+<td ><input  type="year" name ="12-yop"  maxlength="4" required></td>
+ </tr>
+ <tr>
+ <td><b>Graduation</b></td>
+
+<td><textarea rows="3" cols="25"></textarea></td>
+<td><input type="text" name ="d-group"  maxlength="8" required></td>
+<td><input type="text" name ="d-medium"  maxlength="4" required></td>
+<td><input  type="text" name ="d-toal"  maxlength="4" required></td>
+<td><input type="text" name ="d-total"  maxlength="4" required></td>
+<td ><input  type="number" name="d-percentage"  maxlength="6" required></td>
+<td><input type="text" name ="d-grad"  maxlength="4" required></td>
+<td><input   type="year" name ="d-yop"  maxlength="4" required></td>
+
+ </tr>
+
+ </table>
+     </div>
+     <div class="form-action-buttons">
+      <!--Input Button-->
+      <input type="submit" value="Submit">
+      <a href = "viewusers.jsp">View Data</a>
+  </div>
+
+<script type="text/javascript">
+function loadImage(event) {
+var output = document.getElementById('output');
+output.src = URL.createObjectURL(event.target.files[0]);
+output.onload = function() {
+URL.revokeObjectURL(output.src)
+}
+}
+window.addEventListener('load', () => {
+    const button=document.querySelector('#clear');
+    button.addEventListener('clear', () =>{
+        document.querySelector('#enter').value="";
+    });
+});
+
+</script>
+</form>
+</body>
+</html>
